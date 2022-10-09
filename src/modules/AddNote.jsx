@@ -9,7 +9,7 @@ export default function AddNote({ isActive, setIsActive, setShowNotes }) {
   const [otherTexts, setOtherTexts] = useState([]);
 
   return (
-    <section className={`relative ${isActive ? "flex" : "hidden"} flex-col bg-white max-w-lg rounded-lg px-8 py-16 w-screen`}>
+    <section className={`${isActive ? "flex" : "hidden"} flex-col bg-white max-w-lg rounded-lg px-8 py-16 w-screen mt-[100vh]`}>
       <RetrunButton section={setIsActive} previousSection={setShowNotes} top="64" left="-30" />
       <h2 className="font-bold text-4xl text-primaryColor-500 text-center mb-8">+ Nova Anotação + </h2>
       <form action="" className="flex flex-col">
